@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+    --cor-primaria:#FFF2E7;
+    --cor-secundaria:#ECD6C4;
+    --cor-hover:#bebaba;
+
+    --font-primaria:'Sarala', sans-serif;
+    --font-secundaria: 'Righteous', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(38deg, #2F2325 0%, #8E5D52 100%);
+
+}
+
+.cabecalho{
+    padding: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho__menu__logo{
+    height: 72px;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 60px;
+    margin: 32px;
+}
+
+.cabecalho__menu__links{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.125rem;
+    color:var(--cor-primaria);
+}
+
+.container{
+    width: 100%;
+    border-top: 0.4px solid var(--cor-primaria);
+    margin-bottom: 48px;
+}
+
+.container__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container__main__write{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.container__main__title{
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 4rem;
+    color: var(--cor-primaria);
+}
+
+.container__main__subtitle{
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.container__main__button{
+    width: 185px;
+    height: 67px;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 25);
+    background-color:var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    color: #2F2325;
+    cursor: pointer;
+}
+
+.container__main__button:hover{
+
+    background-color:var(--cor-hover);
+}
+
+.container__main__logo{
+    height: 430px;
+}
+
+.container_secondary{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.container_secondary_subtitle{
+    border-top: 0.4px solid var(--cor-primaria); /*Esta borda acompanha o tamanho do titulo*/
+    padding-top: 48px;
+    color: var(--cor-primaria);
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container_secondary_paragraph{
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+
+.rodape{
+    border-top: 0.4px solid var(--cor-primaria);
+    padding: 48px;
+}
+
+.rodape__img{
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width:480px) and (max-width:1200px){
+
+    .cabecalho{ /*OK*/
+        padding: auto;
+    }
+
+    .container__main__write{ /*OK*/
+        gap: 15px;
+        margin-left: 4.6%;
+    }
+
+    .container__main__title{ /*OK*/
+        font-size: 2.5rem;
+    }
+
+    .container__main__subtitle{ /*OK*/
+        font-size: 1.2rem;
+    }
+
+    .container__main__logo{
+        height: 200px;
+        margin-right: 2%;
+    }
+
+    .container_secondary_subtitle{
+        padding-top: 35px;
+    }
+    .container_secondary{
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: justify;
+    }
+    
+    .cabecalho__menu__logo{
+        height: 50px;
+    }
+    
+    .cabecalho__menu{
+        display: flex;
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .container__main__button{
+        width: 170px;
+        height: 45px;    
+    }
+
+
+}
+
